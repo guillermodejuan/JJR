@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/empresa">
+        <item
+            android:id="@+id/itemempresa"
+            android:title="Llamar a empresa"></item>
+    </group>
+    <group android:id="@+id/fijocontacto">
+        <item
+            android:id="@+id/itemfijocontacto"
+            android:title="Llamar a contacto (fijo)" />
+    </group>
+    <group android:id="@+id/movilcontacto">
+        <item
+            android:id="@+id/itemmovilcontacto"
+            android:title="Llamar a contacto (móvil)" />
+    </group>
+</menu>

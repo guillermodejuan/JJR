@@ -1,0 +1,111 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutVisitas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="com.cta.android.appcomercial.controladores.VisitasFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayoutVisitas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ibDiaSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="102dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/tvborder3"
+            android:contentDescription="@string/descDiaSiguiente"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/listaVisitas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btFechaVisitas"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloVisitas"
+            app:layout_constraintVertical_bias="0.562"
+            app:srcCompat="@android:drawable/arrow_up_float" />
+
+        <ImageButton
+            android:id="@+id/ibDiaAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="102dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/tvborder3"
+            android:contentDescription="@string/descDiaAnterior"
+            android:padding="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/listaVisitas"
+            app:layout_constraintEnd_toStartOf="@+id/btFechaVisitas"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloVisitas"
+            app:layout_constraintVertical_bias="0.54"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <Button
+            android:id="@+id/btFechaVisitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tvborder3"
+            android:text="05/11/2017"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ibDiaSiguiente"
+            app:layout_constraintStart_toEndOf="@+id/ibDiaAnterior"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloVisitas"
+            app:layout_constraintVertical_bias="0.05"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tvTituloVisitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/visitas"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="30sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/ibAnadirVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tvborder3"
+            android:contentDescription="@string/descAnadirVisita"
+            app:layout_constraintBottom_toTopOf="@+id/listaVisitas"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toRightOf="@+id/ibDiaSiguiente"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTituloVisitas"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <ListView
+            android:id="@+id/listaVisitas"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btFechaVisitas" />
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

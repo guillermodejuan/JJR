@@ -1,0 +1,420 @@
+#
+# generated on 2018/01/21 01:43:27
+#
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Cargo
+tableName=cargo
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Cliente
+tableName=cliente
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombreComercial
+# --field-end--
+# --field-start--
+fieldName=razonSocial
+# --field-end--
+# --field-start--
+fieldName=cif
+# --field-end--
+# --field-start--
+fieldName=direccion
+# --field-end--
+# --field-start--
+fieldName=codigoPostal
+# --field-end--
+# --field-start--
+fieldName=web
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=telefono
+# --field-end--
+# --field-start--
+fieldName=coordenadas
+# --field-end--
+# --field-start--
+fieldName=numEmpleados
+# --field-end--
+# --field-start--
+fieldName=facturacion
+# --field-end--
+# --field-start--
+fieldName=localidad
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.ClienteSector
+tableName=clientesector
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=cliente
+foreign=true
+uniqueCombo=true
+# --field-end--
+# --field-start--
+fieldName=sector
+foreign=true
+uniqueCombo=true
+columnDefinition=INTEGER CONSTRAINT FK_CLIENTESECTOR_SECTOR REFERENCES sector(id) ON DELETE CASCADE
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.ComunidadAutonoma
+tableName=comunidadautonoma
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.ContactoCliente
+tableName=contactocliente
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --field-start--
+fieldName=apellidos
+# --field-end--
+# --field-start--
+fieldName=telefono
+# --field-end--
+# --field-start--
+fieldName=movil
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=otros
+# --field-end--
+# --field-start--
+fieldName=cliente
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=cargo
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=foto
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.ContactoRepresentado
+tableName=contactorepresentado
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --field-start--
+fieldName=apellidos
+# --field-end--
+# --field-start--
+fieldName=telefono
+# --field-end--
+# --field-start--
+fieldName=movil
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=otros
+# --field-end--
+# --field-start--
+fieldName=representado
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=cargo
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=foto
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.LineaOferta
+tableName=lineaoferta
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=cantidad
+# --field-end--
+# --field-start--
+fieldName=precio
+# --field-end--
+# --field-start--
+fieldName=producto
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=oferta
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Localidad
+tableName=localidad
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --field-start--
+fieldName=codigo
+# --field-end--
+# --field-start--
+fieldName=provincia
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Oferta
+tableName=oferta
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=referencia
+# --field-end--
+# --field-start--
+fieldName=fecha
+# --field-end--
+# --field-start--
+fieldName=fechaLimite
+# --field-end--
+# --field-start--
+fieldName=cliente
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=representado
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Producto
+tableName=producto
+# --table-fields-start--
+# --field-start--
+fieldName=imageBytes
+dataPersister=BYTE_ARRAY
+# --field-end--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=descripcion
+# --field-end--
+# --field-start--
+fieldName=referencia
+# --field-end--
+# --field-start--
+fieldName=precio
+# --field-end--
+# --field-start--
+fieldName=sector
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=caducidad
+# --field-end--
+# --field-start--
+fieldName=representado
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=info
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Provincia
+tableName=provincia
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --field-start--
+fieldName=comunidadAutonoma
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Representado
+tableName=representado
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombreComercial
+# --field-end--
+# --field-start--
+fieldName=razonSocial
+# --field-end--
+# --field-start--
+fieldName=cif
+# --field-end--
+# --field-start--
+fieldName=direccion
+# --field-end--
+# --field-start--
+fieldName=codigoPostal
+# --field-end--
+# --field-start--
+fieldName=web
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=telefono
+# --field-end--
+# --field-start--
+fieldName=coordenadas
+# --field-end--
+# --field-start--
+fieldName=numEmpleados
+# --field-end--
+# --field-start--
+fieldName=facturacion
+# --field-end--
+# --field-start--
+fieldName=localidad
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Sector
+tableName=sector
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=nombre
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.cta.android.appcomercial.model.Visita
+tableName=visita
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=fechainicio
+# --field-end--
+# --field-start--
+fieldName=tipovisita
+# --field-end--
+# --field-start--
+fieldName=fechafinal
+# --field-end--
+# --field-start--
+fieldName=titulo
+# --field-end--
+# --field-start--
+fieldName=notas
+# --field-end--
+# --field-start--
+fieldName=emplazamiento
+# --field-end--
+# --field-start--
+fieldName=contactoCliente
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=cliente
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=representado
+foreign=true
+# --field-end--
+# --field-start--
+fieldName=contactoRepresentado
+foreign=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

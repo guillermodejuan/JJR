@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">AppComercial</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--interfaz EMPRESAS -->
+    <string name="empresas">EMPRESAS</string>
+    <string name="rb1">REPRESENTADOS</string>
+    <string name="rb2">CLIENTES</string>
+    <string name="hintBuscarEmpresa">Búsqueda ...</string>
+
+    <!-- interfaz AÑADIR EMPRESA -->
+    <string name="nuevoCliente">NUEVO CLIENTE</string>
+    <string name="nuevoRepresentado">NUEVO REPRESENTADO</string>
+
+    <!-- botones -->
+    <string name="btContactos">CONTACTOS</string>
+    <string name="btSectores">SECTORES</string>
+    <string name="btClientes">CLIENTES</string>
+    <string name="btGuardar">OK</string>
+    <string name="btCancelar">CANCELAR</string>
+    <!--tvNombreCampos -->
+    <!-- empresa -->
+    <string name="tvNombre">Nombre: </string>
+    <string name="tvRazon">Razon Social: </string>
+    <string name="tvCif">CIF: </string>
+    <string name="tvDireccion">Direccion: </string>
+    <string name="tvCP">CP: </string>
+    <string name="tvWeb">Web: </string>
+    <string name="tvEmail">Email: </string>
+    <string name="tvTelefono">Telefono: </string>
+    <string name="tvCoordenadas">Coordenadas: </string>
+    <string name="tvEmpleados">Empleados: </string>
+    <string name="tvFacturacion">Facturación: </string>
+    <string name="tvLocalidad">Localidad: </string>
+    <string name="tvProvincia">Provincia: </string>
+    <string name="tvComunidadAutonoma">Comunidad Autónoma: </string>
+    <!-- Añadir Empresa -->
+    <string name="selectCom">* Seleccione comunidad ...</string>
+    <string name="selectProv">* Seleccione provincia ...</string>
+    <string name="selectLoc">* Seleccione localidad ...</string>
+    <!-- contacto -->
+    <string name="nombreContacto">Nombre</string>
+    <string name="apellidosContacto">Apellidos</string>
+    <string name="telefonoContacto">Telefono</string>
+    <string name="movilContacto">Movil</string>
+    <string name="emailContacto">Email</string>
+    <string name="otrosDatosContacto">Otros Datos ...</string>
+    <string name="cargoContacto">Cargo</string>
+    <string name="empresaContacto">Empresa</string>
+    <string name="selectCargo">* Seleccione cargo ...</string>
+    <string name="hintInfoContacto">Otros datos ...</string>
+
+    <!-- descripcion imagebuttons -->
+    <string name="descFotoContacto">foto de contacto</string>
+    <string name="descBtnGuardarContact">Btn Guardar Contacto Nuevo</string>
+    <string name="descBtnCancelContacto">Btn Cancelar Contacto Nuevo</string>
+    <string name="descBtnAnadirEmpresa">Btn Añadir Empresa</string>
+    <string name="descBtnBuscarEmpresa">Btn Buscar Empresa</string>
+    <string name="descBtnEliminarEmpresa">Btn Eliminar Empresa</string>
+    <string name="descBtnListaContactos">Btn Lista Contactos</string>
+    <string name="descBtnAlterEmpresa">Btn Alternativo Empresa</string>
+    <string name="descBtnEmailEmpresa">Btn Email Empresa</string>
+    <string name="descBtnLlamadaEmpresa">Btn Llamada Empresa</string>
+    <string name="descBtnNavegarEmpresa">Btn Navegar Empresa</string>
+    <string name="descBtnRutaEmpresa">Btn Ruta Empresa</string>
+    <string name="descBtnGuardarNuevaEmpresa">Btn Guardar Nueva Empresa</string>
+    <string name="descBtnCancelarNuevaEmpresa">Btn Cancelar Nueva Empresa</string>
+    <string name="descInfoContacto">Btn Info Contacto</string>
+    <string name="descDiaAnterior">Btn Dia Anterior</string>
+    <string name="descDiaSiguiente">Btn Dia Siguiente</string>
+    <string name="descAnadirVisita">Btn Anadir Visita</string>
+    <string name="descAtrasNuevaVisita">Btn Atras Nueva Visita</string>
+    <string name="descGuardarNuevaVisita">Btn Guardar Nueva Visita</string>
+    <string name="descLlamadaCita">Btn Llamada Cita</string>
+    <string name="descNotasCita">Btn Notas Cita</string>
+    <string name="descRutaCita">Btn Ruta Cita</string>
+    <string name="descEliminarCita">Btn Eliminar Cita</string>
+    <string name="descEmailCita">Btn Email Cita</string>
+
+    <!--interfaz VISITAS -->
+    <string name="visitas">VISITAS</string>
+    <string name="horainicio">HORA INICIO</string>
+    <string name="horafinal">HORA FINAL</string>
+    <string name="notasVisita">Notas ...</string>
+
+    <!--interfaz OFERTAS -->
+    <string name="OFERTAS">OFERTAS</string>
+
+    <!-- interfaz PEDIDOS -->
+    <string name="PEDIDOS">PEDIDOS</string>
+
+    <!--interfaz CONTABILIDAD -->
+    <string name="CONTABILIDAD">CONTABILIDAD</string>
+
+    <!--interfaz RESUMENES -->
+    <string name="RESUMENES">RESUMENES</string>
+</resources>
